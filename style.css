@@ -1,0 +1,81 @@
+* {margin: 0%; padding: 0%; box-sizing: border-box;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(248, 239, 239);
+}
+
+.content{
+    padding: 10px 40px 0 40px ;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.avatar img{
+    height: 100px;
+    border-radius: 50px;
+}
+
+.description label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.dica{
+    background-color: #fff;
+    padding: 10px;
+    margin-left:10px;
+    float: right;
+}
+
+@media screen and (max-width: 640px) {
+    .dica {
+        margin: 10px 0px;
+        float: none;
+        width: 100px;
+    }
+  }
+  
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    border: none;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    height: 30px;
+    padding: 0px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#clear {
+    background-color: rgb(67, 87, 199);
+    color: #fff;
+}
+
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(83, 83, 83);
+}

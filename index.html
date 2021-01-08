@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Cape Text</title>
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="avatar"><img src="./assets/IMG-20180805-WA0008.jpg" alt=""></div>
+        
+        <div class="description">
+            <label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit laboriosam dolores quos, repellat fugit soluta assumenda fugiat voluptas!
+            </label>
+
+        </div>
+        
+        <div class="dica">
+            <label><b>Dica:</b> Dê um click em cima para copiar.</label>
+        </div>
+    
+        <textarea name="" id="input" cols='47' rows="10" placeholder=" Vamos começar! Digite aqui seu texto." value=''></textarea>
+    
+        <div id="botoes">
+            <button class="btn" id="lowcase">Minúscula</button>
+            <button class="btn" id="uppercase">Maiúscula</button>
+            <button class="btn" id="iniciaisMaiusculas">Iniciais Maiúsculas</button>
+            <button class="btn" id="clear">Limpar</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#input').click(function () {
+            $(this).select();
+            document.execCommand('copy');
+        })
+    </script>
+</body>
+
+</html>
