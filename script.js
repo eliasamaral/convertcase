@@ -39,13 +39,4 @@ const iniciaisMaiusculas = (e) => {
 }
 
 
-// --------- AJUSTE NA ESTILIZAÇÃO DO CODIGO --------------
-
-
-// var RefDiv = document.getElementById('botoes');
-// console.log(RefDiv);
-// var largura = window.getComputedStyle(RefDiv, null).getPropertyValue("width");
-// input.style.width = largura
-//---------------------------------------------------------
-
 
