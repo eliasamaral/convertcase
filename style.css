@@ -1,4 +1,5 @@
 * {margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 textarea:focus, input:focus, select:focus {
@@ -10,25 +11,13 @@ textarea:focus, input:focus, select:focus {
 body {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     flex-direction: column;
     background-color: rgb(248, 239, 239);
 }
 
-.avatar{
-    margin-top: 50px;
-}
-.avatar img{
-    height: 100px;
-    border-radius: 50px;
-}
-
-.description{
-    padding: 0 20px;
-}
-
 .description h1, h2 {
-    font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
@@ -50,7 +39,6 @@ textarea {
     padding: 10px;
     resize: none;
     border: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 420px)
@@ -58,7 +46,6 @@ textarea {
   .btn{
     margin-top: 10px;
   }
-
 }
 
 .botoes{
@@ -71,12 +58,8 @@ textarea {
     border: none;
     height: 30px;
     padding: 0px 10px;
-    font-family: 'Roboto', sans-serif;
     color: #333333;
     margin-left: 5px;
-    
-    
-
 }
 
 #clear {
@@ -84,9 +67,7 @@ textarea {
     color: #fff;
 }
 
-
 label {
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: rgb(83, 83, 83);

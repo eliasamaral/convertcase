@@ -1,10 +1,13 @@
 const input = document.getElementById('input')
+
 const LowCase = document.getElementById('lowcase')
 const UpperCase = document.getElementById('uppercase')
 const iniciaisMaiusculasDOM = document.getElementById('iniciaisMaiusculas')
 const clear = document.getElementById('clear')
 
+const dica = document.getElementsByClassName('dica')
 
+// Ações
 clear.addEventListener('click', () => {
     input.value = ''
 })
@@ -22,7 +25,7 @@ iniciaisMaiusculasDOM.addEventListener('click', () => {
 })
 
 
-
+// Funções
 const tudoMaiusculo = (e) => {
     const out = e.toUpperCase()
     input.value = out
