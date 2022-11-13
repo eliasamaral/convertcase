@@ -6,53 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>TextEditor</title>
+    <title>Case Converter</title>
 </head>
 
 <body>
 
-    <!-- <div class="avatar"><img src="./assets/IMG-20180805-WA0008.jpg" alt=""></div> -->
+    <div class="container">
+        <!-- <div class="avatar"><img src="./assets/IMG-20180805-WA0008.jpg" alt=""></div> -->
 
-    <div class="description">
-        <h1>Hello! My name is Elias Amaral.</h1>
-        <h2>This is my first programming project to leave VsCode. With him I learned CSS, HTML, JS and GitHub.
-            I use GitHub Pages for hosting.</h2>
-    </div>
+        <div class="description">
+            <h1>Case Converter</h1>
+        </div>
 
-    <div class="dica">
-        <label><b>Tip:</b> Click on the text to copy.</label>
-    </div>
+        <div class="dica">
+            <label><b>Tip:</b> Click on the text to copy.</label>
+        </div>
 
-    <textarea name="" id="input" cols='40' rows="10" placeholder="Let's start! Type your text here."
-        value=''></textarea>
+        <textarea name="" id="input" placeholder="Let's start! Type your text here." value='' spellcheck="false"></textarea>
 
-    <div class="botoes">
-        <button class="btn" id="lowcase">Lowercase</button>
-        <button class="btn" id="uppercase">Uppercase</button>
-        <button class="btn" id="iniciaisMaiusculas">Initials Uppercase</button>
-        <button class="btn" id="clear">Clean</button>
-    </div>
+        <div class="botoes">
+            <button class="btn" id="lowcase">Lowercase</button>
+            <button class="btn" id="uppercase">Uppercase</button>
+            <button class="btn" id="iniciaisMaiusculas">Initials Uppercase</button>
+            <button class="btn" id="clear">Clean</button>
+        </div>
 
-    <a href="https://github.com/eliasamaral">
-        <img src="https://img2.gratispng.com/20180709/lgb/kisspng-computer-icons-download-github-clip-art-github-icon-5b44289596fd85.7749119715311934936185.jpg" alt="" style="width:42px;height:42px;margin-top: 50px;opacity: 30%;">
-    </a>
+        <a href="https://github.com/eliasamaral">
+            <img src="https://img2.gratispng.com/20180709/lgb/kisspng-computer-icons-download-github-clip-art-github-icon-5b44289596fd85.7749119715311934936185.jpg"
+                alt="" style="width:42px;height:42px;margin-top: 50px;opacity: 30%;">
+        </a>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-    <script>
+        <script>
 
-        $('#input').click(
-            
-        function () {
-            $(this).select();
-            document.execCommand('copy');
-        }
+            $('#input').click(
 
-        )
-    </script>
+                function () {
+                    $(this).select();
+                    document.execCommand('copy');
+                }
+ 
+            )
+        </script>
 </body>
+
+
+
+
+</div>
+
+
 
 </html>
