@@ -1,3 +1,3 @@
 # TextEditor
 
-https://eliasamaral.github.io/TextEditor/
+https://eliasamaral.github.io/convertcase/
